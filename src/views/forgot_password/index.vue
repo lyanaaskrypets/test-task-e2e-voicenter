@@ -78,6 +78,7 @@
                             'border-brand-danger': state.email.errorMessage,
                             'border-brand-burack': !state.email.errorMessage,
                         }"
+                        data-cy="forgot-password-email-field"
                         class="
                             focus:outline-none focus:border-brand-main
                             text-gray-400
@@ -94,7 +95,7 @@
                             border
                             rounded
                         "
-                        placeholder="jane.doe@gmail.com"
+                        placeholder="jane.doe@gmail.com" 
                         required
                     />
                     <span

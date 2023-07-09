@@ -64,6 +64,7 @@
                         v-model="state.email.value"
                         type="email"
                         @input="clearApiValidation"
+                        data-cy="login-email-field"
                         class="
                             focus:outline-none focus:border-brand-main
                             text-gray-400
@@ -84,7 +85,7 @@
                             'border-brand-danger': state.email.errorMessage,
                             'border-brand-burack': !state.email.errorMessage,
                         }"
-                        placeholder="jane.doe@gmail.com"
+                        placeholder="jane.doe@gmail.com" 
                         required
                     />
                     <span
@@ -107,6 +108,7 @@
                             'border-brand-danger': state.password.errorMessage,
                             'border-brand-burack': !state.password.errorMessage,
                         }"
+                        data-cy="login-password-field"
                         class="
                             focus:outline-none focus:border-brand-main
                             text-gray-400
@@ -123,7 +125,7 @@
                             border
                             rounded
                         "
-                        placeholder="*********"
+                        placeholder="*********" 
                         required
                     />
                     <span
@@ -146,7 +148,7 @@
 
                 <div class="w-full xl:pb-6 mt-5">
                     <button
-                        type="submit"
+                        type="submit" data-cy="login-submit-btn"
                         class="
                             m-auto
                             w-full
